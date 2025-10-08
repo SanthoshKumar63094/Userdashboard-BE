@@ -10,4 +10,4 @@ node_modules
 # OS or editor files
 .DS_Store
 .vscode/
- admin-backend
+.*
