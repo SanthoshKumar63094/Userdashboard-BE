@@ -8,10 +8,11 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 
-const corsOrigin = 'https://useradminecommerce.netlify.app' || 'http://localhost:5173';
+const corsOrigin = 'https://useradminecommerce.netlify.app';
 app.use(cors({
-  origin: corsOrigin,
+  origin: [corsOrigin],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials:true
 }));
 
 // Health check endpoint
